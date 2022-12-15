@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto.calculator;
+option go_package = "proto/calculator";
+
+message CalculatorReq {
+    int64 x = 1;
+    int64 y = 2;
+}
+
+message CalculatorResp {
+    int64 z = 1;
+}
+
+service CalculatorApi {
+    rpc Add(CalculatorReq) returns (CalculatorResp) {};
+    rpc Sub(CalculatorReq) returns (CalculatorResp) {};
+    rpc Mult(CalculatorReq) returns (CalculatorResp) {};
+}
