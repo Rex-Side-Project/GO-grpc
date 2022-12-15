@@ -14,37 +14,44 @@ import (
 type Server struct{}
 
 func (*Server) Add(ctx context.Context, req *calculatorPB.CalculatorReq) (*calculatorPB.CalculatorResp, error) {
-	fmt.Printf("Sum function is invoked with %v \n", req)
+	fmt.Printf("Add function is invoked with %v \n", req)
 
 	x := req.GetX()
 	y := req.GetY()
+	z := x + y
 
 	res := &calculatorPB.CalculatorResp{
-		Z: x + y,
+		Expression: fmt.Sprintf("%d + %d = %d", x, y, z),
+		Result:     z,
 	}
+	fmt.Printf("%v", res)
 
 	return res, nil
 }
 func (*Server) Sub(ctx context.Context, req *calculatorPB.CalculatorReq) (*calculatorPB.CalculatorResp, error) {
-	fmt.Printf("Sum function is invoked with %v \n", req)
+	fmt.Printf("Sub function is invoked with %v \n", req)
 
 	x := req.GetX()
 	y := req.GetY()
+	z := x - y
 
 	res := &calculatorPB.CalculatorResp{
-		Z: x - y,
+		Expression: fmt.Sprintf("%d - %d = %d", x, y, z),
+		Result:     z,
 	}
 
 	return res, nil
 }
 func (*Server) Mult(ctx context.Context, req *calculatorPB.CalculatorReq) (*calculatorPB.CalculatorResp, error) {
-	fmt.Printf("Sum function is invoked with %v \n", req)
+	fmt.Printf("Mult function is invoked with %v \n", req)
 
 	x := req.GetX()
 	y := req.GetY()
+	z := x * y
 
 	res := &calculatorPB.CalculatorResp{
-		Z: x * y,
+		Expression: fmt.Sprintf("%d * %d = %d", x, y, z),
+		Result:     z,
 	}
 
 	return res, nil
