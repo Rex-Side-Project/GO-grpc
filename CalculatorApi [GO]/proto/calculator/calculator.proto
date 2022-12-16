@@ -17,4 +17,5 @@ service CalculatorApi {
     rpc Add(CalculatorReq) returns (CalculatorResp) {};
     rpc Sub(CalculatorReq) returns (CalculatorResp) {};
     rpc Mult(CalculatorReq) returns (CalculatorResp) {};
+    rpc Fibonacci(CalculatorReq) returns (stream CalculatorResp) {};
 }

@@ -146,7 +146,7 @@ var file_calculator_proto_rawDesc = []byte{
 	0x65, 0x73, 0x70, 0x12, 0x1e, 0x0a, 0x0a, 0x45, 0x78, 0x70, 0x72, 0x65, 0x73, 0x73, 0x69, 0x6f,
 	0x6e, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x0a, 0x45, 0x78, 0x70, 0x72, 0x65, 0x73, 0x73,
 	0x69, 0x6f, 0x6e, 0x12, 0x16, 0x0a, 0x06, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x02, 0x20,
-	0x01, 0x28, 0x03, 0x52, 0x06, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0xf4, 0x01, 0x0a, 0x0d,
+	0x01, 0x28, 0x03, 0x52, 0x06, 0x52, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0xc8, 0x02, 0x0a, 0x0d,
 	0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x41, 0x70, 0x69, 0x12, 0x4a, 0x0a,
 	0x03, 0x41, 0x64, 0x64, 0x12, 0x1f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x63, 0x61, 0x6c,
 	0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74,
@@ -162,8 +162,14 @@ var file_calculator_proto_rawDesc = []byte{
 	0x2e, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x52, 0x65, 0x71, 0x1a, 0x20,
 	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f,
 	0x72, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x52, 0x65, 0x73, 0x70,
-	0x22, 0x00, 0x42, 0x12, 0x5a, 0x10, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f, 0x63, 0x61, 0x6c, 0x63,
-	0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x22, 0x00, 0x12, 0x52, 0x0a, 0x09, 0x46, 0x69, 0x62, 0x6f, 0x6e, 0x61, 0x63, 0x63, 0x69, 0x12,
+	0x1f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74,
+	0x6f, 0x72, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x52, 0x65, 0x71,
+	0x1a, 0x20, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61,
+	0x74, 0x6f, 0x72, 0x2e, 0x43, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x52, 0x65,
+	0x73, 0x70, 0x22, 0x00, 0x30, 0x01, 0x42, 0x12, 0x5a, 0x10, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2f,
+	0x63, 0x61, 0x6c, 0x63, 0x75, 0x6c, 0x61, 0x74, 0x6f, 0x72, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x33,
 }
 
 var (
@@ -187,11 +193,13 @@ var file_calculator_proto_depIdxs = []int32{
 	0, // 0: proto.calculator.CalculatorApi.Add:input_type -> proto.calculator.CalculatorReq
 	0, // 1: proto.calculator.CalculatorApi.Sub:input_type -> proto.calculator.CalculatorReq
 	0, // 2: proto.calculator.CalculatorApi.Mult:input_type -> proto.calculator.CalculatorReq
-	1, // 3: proto.calculator.CalculatorApi.Add:output_type -> proto.calculator.CalculatorResp
-	1, // 4: proto.calculator.CalculatorApi.Sub:output_type -> proto.calculator.CalculatorResp
-	1, // 5: proto.calculator.CalculatorApi.Mult:output_type -> proto.calculator.CalculatorResp
-	3, // [3:6] is the sub-list for method output_type
-	0, // [0:3] is the sub-list for method input_type
+	0, // 3: proto.calculator.CalculatorApi.Fibonacci:input_type -> proto.calculator.CalculatorReq
+	1, // 4: proto.calculator.CalculatorApi.Add:output_type -> proto.calculator.CalculatorResp
+	1, // 5: proto.calculator.CalculatorApi.Sub:output_type -> proto.calculator.CalculatorResp
+	1, // 6: proto.calculator.CalculatorApi.Mult:output_type -> proto.calculator.CalculatorResp
+	1, // 7: proto.calculator.CalculatorApi.Fibonacci:output_type -> proto.calculator.CalculatorResp
+	4, // [4:8] is the sub-list for method output_type
+	0, // [0:4] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -263,6 +271,7 @@ type CalculatorApiClient interface {
 	Add(ctx context.Context, in *CalculatorReq, opts ...grpc.CallOption) (*CalculatorResp, error)
 	Sub(ctx context.Context, in *CalculatorReq, opts ...grpc.CallOption) (*CalculatorResp, error)
 	Mult(ctx context.Context, in *CalculatorReq, opts ...grpc.CallOption) (*CalculatorResp, error)
+	Fibonacci(ctx context.Context, in *CalculatorReq, opts ...grpc.CallOption) (CalculatorApi_FibonacciClient, error)
 }
 
 type calculatorApiClient struct {
@@ -300,11 +309,44 @@ func (c *calculatorApiClient) Mult(ctx context.Context, in *CalculatorReq, opts 
 	return out, nil
 }
 
+func (c *calculatorApiClient) Fibonacci(ctx context.Context, in *CalculatorReq, opts ...grpc.CallOption) (CalculatorApi_FibonacciClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_CalculatorApi_serviceDesc.Streams[0], "/proto.calculator.CalculatorApi/Fibonacci", opts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &calculatorApiFibonacciClient{stream}
+	if err := x.ClientStream.SendMsg(in); err != nil {
+		return nil, err
+	}
+	if err := x.ClientStream.CloseSend(); err != nil {
+		return nil, err
+	}
+	return x, nil
+}
+
+type CalculatorApi_FibonacciClient interface {
+	Recv() (*CalculatorResp, error)
+	grpc.ClientStream
+}
+
+type calculatorApiFibonacciClient struct {
+	grpc.ClientStream
+}
+
+func (x *calculatorApiFibonacciClient) Recv() (*CalculatorResp, error) {
+	m := new(CalculatorResp)
+	if err := x.ClientStream.RecvMsg(m); err != nil {
+		return nil, err
+	}
+	return m, nil
+}
+
 // CalculatorApiServer is the server API for CalculatorApi service.
 type CalculatorApiServer interface {
 	Add(context.Context, *CalculatorReq) (*CalculatorResp, error)
 	Sub(context.Context, *CalculatorReq) (*CalculatorResp, error)
 	Mult(context.Context, *CalculatorReq) (*CalculatorResp, error)
+	Fibonacci(*CalculatorReq, CalculatorApi_FibonacciServer) error
 }
 
 // UnimplementedCalculatorApiServer can be embedded to have forward compatible implementations.
@@ -319,6 +361,9 @@ func (*UnimplementedCalculatorApiServer) Sub(context.Context, *CalculatorReq) (*
 }
 func (*UnimplementedCalculatorApiServer) Mult(context.Context, *CalculatorReq) (*CalculatorResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Mult not implemented")
+}
+func (*UnimplementedCalculatorApiServer) Fibonacci(*CalculatorReq, CalculatorApi_FibonacciServer) error {
+	return status.Errorf(codes.Unimplemented, "method Fibonacci not implemented")
 }
 
 func RegisterCalculatorApiServer(s *grpc.Server, srv CalculatorApiServer) {
@@ -379,6 +424,27 @@ func _CalculatorApi_Mult_Handler(srv interface{}, ctx context.Context, dec func(
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CalculatorApi_Fibonacci_Handler(srv interface{}, stream grpc.ServerStream) error {
+	m := new(CalculatorReq)
+	if err := stream.RecvMsg(m); err != nil {
+		return err
+	}
+	return srv.(CalculatorApiServer).Fibonacci(m, &calculatorApiFibonacciServer{stream})
+}
+
+type CalculatorApi_FibonacciServer interface {
+	Send(*CalculatorResp) error
+	grpc.ServerStream
+}
+
+type calculatorApiFibonacciServer struct {
+	grpc.ServerStream
+}
+
+func (x *calculatorApiFibonacciServer) Send(m *CalculatorResp) error {
+	return x.ServerStream.SendMsg(m)
+}
+
 var _CalculatorApi_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "proto.calculator.CalculatorApi",
 	HandlerType: (*CalculatorApiServer)(nil),
@@ -396,6 +462,12 @@ var _CalculatorApi_serviceDesc = grpc.ServiceDesc{
 			Handler:    _CalculatorApi_Mult_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "Fibonacci",
+			Handler:       _CalculatorApi_Fibonacci_Handler,
+			ServerStreams: true,
+		},
+	},
 	Metadata: "calculator.proto",
 }
